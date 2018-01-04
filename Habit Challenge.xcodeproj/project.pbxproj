@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FC8DB8A1DE3CC81565A022C /* Pods_Habit_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321344B9D28A83C8FF47A3C /* Pods_Habit_Challenge.framework */; };
+		D84109311FC73FBE00134FA2 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84109321FC73FBE00134FA2 /* SQLite.framework */; };
+		D84109341FC744F400134FA2 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84109331FC744F400134FA2 /* DateTools.swift */; };
+		D8414C4E1FBA64850099C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8414C4D1FBA64850099C123 /* AppDelegate.swift */; };
+		D8414C551FBA64850099C123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8414C541FBA64850099C123 /* Assets.xcassets */; };
+		D8414C581FBA64850099C123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8414C561FBA64850099C123 /* LaunchScreen.storyboard */; };
+		D8414C611FBA65620099C123 /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8414C5F1FBA65620099C123 /* HabitListViewController.swift */; };
+		D8414C621FBA65620099C123 /* HabitListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8414C601FBA65620099C123 /* HabitListViewController.xib */; };
+		D8414C651FBA65E10099C123 /* NewHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8414C631FBA65E10099C123 /* NewHabitViewController.swift */; };
+		D8414C661FBA65E10099C123 /* NewHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8414C641FBA65E10099C123 /* NewHabitViewController.xib */; };
+		D8414C691FBA66300099C123 /* DisplayHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8414C671FBA66300099C123 /* DisplayHabitViewController.swift */; };
+		D8414C6A1FBA66300099C123 /* DisplayHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8414C681FBA66300099C123 /* DisplayHabitViewController.xib */; };
+		D8414C6C1FBA66F00099C123 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8414C6B1FBA66F00099C123 /* DAO.swift */; };
+		D84277701FBD0C630004B2AE /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842776F1FBD0C630004B2AE /* Habit.swift */; };
+		D84277721FBD0D300004B2AE /* HabitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84277711FBD0D300004B2AE /* HabitResult.swift */; };
+		D8430E521FC9F4E800340040 /* HabitResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8430E501FC9F4E800340040 /* HabitResultTableViewCell.swift */; };
+		D8430E531FC9F4E800340040 /* HabitResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8430E511FC9F4E800340040 /* HabitResultTableViewCell.xib */; };
+		D88184051FF547EB00E9B101 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88184031FF547EB00E9B101 /* MenuViewController.swift */; };
+		D88184061FF547EB00E9B101 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88184041FF547EB00E9B101 /* MenuViewController.xib */; };
+		D88184091FF54CFF00E9B101 /* DailyReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88184071FF54CFF00E9B101 /* DailyReminderVC.swift */; };
+		D881840A1FF54CFF00E9B101 /* DailyReminderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88184081FF54CFF00E9B101 /* DailyReminderVC.xib */; };
+		D881840D1FF5547100E9B101 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881840B1FF5547100E9B101 /* AboutUsVC.swift */; };
+		D881840E1FF5547100E9B101 /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D881840C1FF5547100E9B101 /* AboutUsVC.xib */; };
+		D88184111FF554A600E9B101 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881840F1FF554A600E9B101 /* SettingsVC.swift */; };
+		D88184121FF554A600E9B101 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88184101FF554A600E9B101 /* SettingsVC.xib */; };
+		D88184151FF554E100E9B101 /* SupportOurMissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88184131FF554E100E9B101 /* SupportOurMissionVC.swift */; };
+		D88184161FF554E100E9B101 /* SupportOurMissionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88184141FF554E100E9B101 /* SupportOurMissionVC.xib */; };
+		D88184191FF5553000E9B101 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88184171FF5553000E9B101 /* ContactUsVC.swift */; };
+		D881841A1FF5553000E9B101 /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88184181FF5553000E9B101 /* ContactUsVC.xib */; };
+		D881841D1FF555A000E9B101 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881841B1FF555A000E9B101 /* ProductsVC.swift */; };
+		D881841E1FF555A000E9B101 /* ProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D881841C1FF555A000E9B101 /* ProductsVC.xib */; };
+		D892E7841FF4083400625AB0 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D892E7831FF4083400625AB0 /* HomeScreenViewController.xib */; };
+		D8B2D53D1FF2A0F0003503BA /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */; };
+		D8B2D5411FF2B2D5003503BA /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2D53F1FF2B2D5003503BA /* WebViewViewController.swift */; };
+		D8B2D5421FF2B2D5003503BA /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B2D5401FF2B2D5003503BA /* WebViewViewController.xib */; };
+		D8CF07DF1FC73A3B00CFD252 /* HabitChallengeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF07DE1FC73A3B00CFD252 /* HabitChallengeDB.swift */; };
+		D8D184071FC7236E0008D880 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D184061FC7236E0008D880 /* Extensions.swift */; };
+		D8EB870C1FCCF63B00D1684F /* clapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870B1FCCF63A00D1684F /* clapping.wav */; };
+		D8EB871A1FCF861C00D1684F /* Day1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870E1FCF861B00D1684F /* Day1.mp3 */; };
+		D8EB871B1FCF861C00D1684F /* Day60.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870F1FCF861B00D1684F /* Day60.mp3 */; };
+		D8EB871C1FCF861C00D1684F /* Day7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87101FCF861B00D1684F /* Day7.mp3 */; };
+		D8EB871D1FCF861C00D1684F /* Day42.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87111FCF861B00D1684F /* Day42.mp3 */; };
+		D8EB871E1FCF861C00D1684F /* Day14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87121FCF861B00D1684F /* Day14.mp3 */; };
+		D8EB871F1FCF861C00D1684F /* Day21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87131FCF861B00D1684F /* Day21.mp3 */; };
+		D8EB87201FCF861C00D1684F /* Day35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87141FCF861B00D1684F /* Day35.mp3 */; };
+		D8EB87211FCF861C00D1684F /* Day50.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87151FCF861C00D1684F /* Day50.mp3 */; };
+		D8EB87221FCF861C00D1684F /* Day28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87161FCF861C00D1684F /* Day28.mp3 */; };
+		D8EB87231FCF861C00D1684F /* Day10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87171FCF861C00D1684F /* Day10.mp3 */; };
+		D8EB87241FCF861C00D1684F /* Day55.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87181FCF861C00D1684F /* Day55.mp3 */; };
+		D8EB87251FCF861C00D1684F /* Day3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB87191FCF861C00D1684F /* Day3.mp3 */; };
+		D8EB87271FCF8B3800D1684F /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB87261FCF8B3800D1684F /* AudioHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D13056764F018213EAAB5AB /* Pods-Habit Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habit Challenge/Pods-Habit Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		7321344B9D28A83C8FF47A3C /* Pods_Habit_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DAFAB811D8699C9F6F1348 /* Pods-Habit Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Habit Challenge/Pods-Habit Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D84109321FC73FBE00134FA2 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84109331FC744F400134FA2 /* DateTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
+		D8414C4A1FBA64850099C123 /* Habit Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8414C4D1FBA64850099C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8414C541FBA64850099C123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8414C571FBA64850099C123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8414C591FBA64850099C123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8414C5F1FBA65620099C123 /* HabitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
+		D8414C601FBA65620099C123 /* HabitListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitListViewController.xib; sourceTree = "<group>"; };
+		D8414C631FBA65E10099C123 /* NewHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitViewController.swift; sourceTree = "<group>"; };
+		D8414C641FBA65E10099C123 /* NewHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewHabitViewController.xib; sourceTree = "<group>"; };
+		D8414C671FBA66300099C123 /* DisplayHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHabitViewController.swift; sourceTree = "<group>"; };
+		D8414C681FBA66300099C123 /* DisplayHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayHabitViewController.xib; sourceTree = "<group>"; };
+		D8414C6B1FBA66F00099C123 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		D842776F1FBD0C630004B2AE /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		D84277711FBD0D300004B2AE /* HabitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitResult.swift; sourceTree = "<group>"; };
+		D8430E501FC9F4E800340040 /* HabitResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitResultTableViewCell.swift; sourceTree = "<group>"; };
+		D8430E511FC9F4E800340040 /* HabitResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitResultTableViewCell.xib; sourceTree = "<group>"; };
+		D88184031FF547EB00E9B101 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D88184041FF547EB00E9B101 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		D88184071FF54CFF00E9B101 /* DailyReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReminderVC.swift; sourceTree = "<group>"; };
+		D88184081FF54CFF00E9B101 /* DailyReminderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReminderVC.xib; sourceTree = "<group>"; };
+		D881840B1FF5547100E9B101 /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		D881840C1FF5547100E9B101 /* AboutUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
+		D881840F1FF554A600E9B101 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		D88184101FF554A600E9B101 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		D88184131FF554E100E9B101 /* SupportOurMissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportOurMissionVC.swift; sourceTree = "<group>"; };
+		D88184141FF554E100E9B101 /* SupportOurMissionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportOurMissionVC.xib; sourceTree = "<group>"; };
+		D88184171FF5553000E9B101 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		D88184181FF5553000E9B101 /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
+		D881841B1FF555A000E9B101 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		D881841C1FF555A000E9B101 /* ProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsVC.xib; sourceTree = "<group>"; };
+		D892E7831FF4083400625AB0 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		D8B2D53F1FF2B2D5003503BA /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		D8B2D5401FF2B2D5003503BA /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
+		D8CF07DE1FC73A3B00CFD252 /* HabitChallengeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitChallengeDB.swift; sourceTree = "<group>"; };
+		D8D184061FC7236E0008D880 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D8EB870B1FCCF63A00D1684F /* clapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clapping.wav; sourceTree = "<group>"; };
+		D8EB870E1FCF861B00D1684F /* Day1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day1.mp3; sourceTree = "<group>"; };
+		D8EB870F1FCF861B00D1684F /* Day60.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day60.mp3; sourceTree = "<group>"; };
+		D8EB87101FCF861B00D1684F /* Day7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day7.mp3; sourceTree = "<group>"; };
+		D8EB87111FCF861B00D1684F /* Day42.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day42.mp3; sourceTree = "<group>"; };
+		D8EB87121FCF861B00D1684F /* Day14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day14.mp3; sourceTree = "<group>"; };
+		D8EB87131FCF861B00D1684F /* Day21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day21.mp3; sourceTree = "<group>"; };
+		D8EB87141FCF861B00D1684F /* Day35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day35.mp3; sourceTree = "<group>"; };
+		D8EB87151FCF861C00D1684F /* Day50.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day50.mp3; sourceTree = "<group>"; };
+		D8EB87161FCF861C00D1684F /* Day28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day28.mp3; sourceTree = "<group>"; };
+		D8EB87171FCF861C00D1684F /* Day10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day10.mp3; sourceTree = "<group>"; };
+		D8EB87181FCF861C00D1684F /* Day55.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day55.mp3; sourceTree = "<group>"; };
+		D8EB87191FCF861C00D1684F /* Day3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day3.mp3; sourceTree = "<group>"; };
+		D8EB87261FCF8B3800D1684F /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8414C471FBA64850099C123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84109311FC73FBE00134FA2 /* SQLite.framework in Frameworks */,
+				6FC8DB8A1DE3CC81565A022C /* Pods_Habit_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFA84B2F95095C8D27BA0515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84109321FC73FBE00134FA2 /* SQLite.framework */,
+				7321344B9D28A83C8FF47A3C /* Pods_Habit_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8414C411FBA64850099C123 = {
+			isa = PBXGroup;
+			children = (
+				D8414C4C1FBA64850099C123 /* Habit Challenge */,
+				D8414C4B1FBA64850099C123 /* Products */,
+				D9243B7165F745E15DF6014B /* Pods */,
+				BFA84B2F95095C8D27BA0515 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8414C4B1FBA64850099C123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8414C4A1FBA64850099C123 /* Habit Challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8414C4C1FBA64850099C123 /* Habit Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				D8414C4D1FBA64850099C123 /* AppDelegate.swift */,
+				D8414C6D1FBA670F0099C123 /* Model */,
+				D8430E4F1FC9F4BC00340040 /* TableViewCells */,
+				D8414C6F1FBA671D0099C123 /* ViewControllers */,
+				D8414C6E1FBA67180099C123 /* View */,
+				D8CF07DD1FC73A0300CFD252 /* Database Classes */,
+				D8D184051FC723460008D880 /* Tools */,
+				D8EB870D1FCF85F200D1684F /* Audiofiles */,
+				D8414C541FBA64850099C123 /* Assets.xcassets */,
+				D8414C561FBA64850099C123 /* LaunchScreen.storyboard */,
+				D8414C591FBA64850099C123 /* Info.plist */,
+			);
+			path = "Habit Challenge";
+			sourceTree = "<group>";
+		};
+		D8414C6D1FBA670F0099C123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8414C6B1FBA66F00099C123 /* DAO.swift */,
+				D842776F1FBD0C630004B2AE /* Habit.swift */,
+				D84277711FBD0D300004B2AE /* HabitResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8414C6E1FBA67180099C123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D88184181FF5553000E9B101 /* ContactUsVC.xib */,
+				D88184141FF554E100E9B101 /* SupportOurMissionVC.xib */,
+				D88184101FF554A600E9B101 /* SettingsVC.xib */,
+				D881840C1FF5547100E9B101 /* AboutUsVC.xib */,
+				D88184081FF54CFF00E9B101 /* DailyReminderVC.xib */,
+				D88184041FF547EB00E9B101 /* MenuViewController.xib */,
+				D8B2D5401FF2B2D5003503BA /* WebViewViewController.xib */,
+				D892E7831FF4083400625AB0 /* HomeScreenViewController.xib */,
+				D8414C641FBA65E10099C123 /* NewHabitViewController.xib */,
+				D8414C681FBA66300099C123 /* DisplayHabitViewController.xib */,
+				D8414C601FBA65620099C123 /* HabitListViewController.xib */,
+				D881841C1FF555A000E9B101 /* ProductsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8414C6F1FBA671D0099C123 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */,
+				D88184031FF547EB00E9B101 /* MenuViewController.swift */,
+				D881840B1FF5547100E9B101 /* AboutUsVC.swift */,
+				D8414C5F1FBA65620099C123 /* HabitListViewController.swift */,
+				D8414C631FBA65E10099C123 /* NewHabitViewController.swift */,
+				D8414C671FBA66300099C123 /* DisplayHabitViewController.swift */,
+				D8B2D53F1FF2B2D5003503BA /* WebViewViewController.swift */,
+				D88184071FF54CFF00E9B101 /* DailyReminderVC.swift */,
+				D881840F1FF554A600E9B101 /* SettingsVC.swift */,
+				D88184131FF554E100E9B101 /* SupportOurMissionVC.swift */,
+				D88184171FF5553000E9B101 /* ContactUsVC.swift */,
+				D881841B1FF555A000E9B101 /* ProductsVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8430E4F1FC9F4BC00340040 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D8430E501FC9F4E800340040 /* HabitResultTableViewCell.swift */,
+				D8430E511FC9F4E800340040 /* HabitResultTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D8CF07DD1FC73A0300CFD252 /* Database Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8CF07DE1FC73A3B00CFD252 /* HabitChallengeDB.swift */,
+			);
+			path = "Database Classes";
+			sourceTree = "<group>";
+		};
+		D8D184051FC723460008D880 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D8D184061FC7236E0008D880 /* Extensions.swift */,
+				D84109331FC744F400134FA2 /* DateTools.swift */,
+				D8EB87261FCF8B3800D1684F /* AudioHelper.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D8EB870D1FCF85F200D1684F /* Audiofiles */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB870E1FCF861B00D1684F /* Day1.mp3 */,
+				D8EB87191FCF861C00D1684F /* Day3.mp3 */,
+				D8EB87101FCF861B00D1684F /* Day7.mp3 */,
+				D8EB87171FCF861C00D1684F /* Day10.mp3 */,
+				D8EB87121FCF861B00D1684F /* Day14.mp3 */,
+				D8EB87131FCF861B00D1684F /* Day21.mp3 */,
+				D8EB87161FCF861C00D1684F /* Day28.mp3 */,
+				D8EB87141FCF861B00D1684F /* Day35.mp3 */,
+				D8EB87111FCF861B00D1684F /* Day42.mp3 */,
+				D8EB87151FCF861C00D1684F /* Day50.mp3 */,
+				D8EB87181FCF861C00D1684F /* Day55.mp3 */,
+				D8EB870F1FCF861B00D1684F /* Day60.mp3 */,
+				D8EB870B1FCCF63A00D1684F /* clapping.wav */,
+			);
+			path = Audiofiles;
+			sourceTree = "<group>";
+		};
+		D9243B7165F745E15DF6014B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0DAFAB811D8699C9F6F1348 /* Pods-Habit Challenge.debug.xcconfig */,
+				3D13056764F018213EAAB5AB /* Pods-Habit Challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8414C491FBA64850099C123 /* Habit Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8414C5C1FBA64850099C123 /* Build configuration list for PBXNativeTarget "Habit Challenge" */;
+			buildPhases = (
+				B09E19E756ABB88A9D5DD191 /* [CP] Check Pods Manifest.lock */,
+				D8414C461FBA64850099C123 /* Sources */,
+				D8414C471FBA64850099C123 /* Frameworks */,
+				D8414C481FBA64850099C123 /* Resources */,
+				A9496D6255783DEA902DBE4B /* [CP] Embed Pods Frameworks */,
+				701BC229F7AE761D0E976899 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Habit Challenge";
+			productName = "Habit Challenge";
+			productReference = D8414C4A1FBA64850099C123 /* Habit Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8414C421FBA64850099C123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Chad Wiedemann LLC";
+				TargetAttributes = {
+					D8414C491FBA64850099C123 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8414C451FBA64850099C123 /* Build configuration list for PBXProject "Habit Challenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8414C411FBA64850099C123;
+			productRefGroup = D8414C4B1FBA64850099C123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8414C491FBA64850099C123 /* Habit Challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8414C481FBA64850099C123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B2D5421FF2B2D5003503BA /* WebViewViewController.xib in Resources */,
+				D881840A1FF54CFF00E9B101 /* DailyReminderVC.xib in Resources */,
+				D8EB87221FCF861C00D1684F /* Day28.mp3 in Resources */,
+				D8414C6A1FBA66300099C123 /* DisplayHabitViewController.xib in Resources */,
+				D8EB87241FCF861C00D1684F /* Day55.mp3 in Resources */,
+				D8EB87211FCF861C00D1684F /* Day50.mp3 in Resources */,
+				D8414C661FBA65E10099C123 /* NewHabitViewController.xib in Resources */,
+				D8EB871B1FCF861C00D1684F /* Day60.mp3 in Resources */,
+				D881841E1FF555A000E9B101 /* ProductsVC.xib in Resources */,
+				D88184061FF547EB00E9B101 /* MenuViewController.xib in Resources */,
+				D8414C621FBA65620099C123 /* HabitListViewController.xib in Resources */,
+				D8EB871C1FCF861C00D1684F /* Day7.mp3 in Resources */,
+				D8430E531FC9F4E800340040 /* HabitResultTableViewCell.xib in Resources */,
+				D88184161FF554E100E9B101 /* SupportOurMissionVC.xib in Resources */,
+				D8EB871D1FCF861C00D1684F /* Day42.mp3 in Resources */,
+				D8414C581FBA64850099C123 /* LaunchScreen.storyboard in Resources */,
+				D892E7841FF4083400625AB0 /* HomeScreenViewController.xib in Resources */,
+				D8EB87201FCF861C00D1684F /* Day35.mp3 in Resources */,
+				D881841A1FF5553000E9B101 /* ContactUsVC.xib in Resources */,
+				D8414C551FBA64850099C123 /* Assets.xcassets in Resources */,
+				D8EB871A1FCF861C00D1684F /* Day1.mp3 in Resources */,
+				D881840E1FF5547100E9B101 /* AboutUsVC.xib in Resources */,
+				D88184121FF554A600E9B101 /* SettingsVC.xib in Resources */,
+				D8EB870C1FCCF63B00D1684F /* clapping.wav in Resources */,
+				D8EB87251FCF861C00D1684F /* Day3.mp3 in Resources */,
+				D8EB87231FCF861C00D1684F /* Day10.mp3 in Resources */,
+				D8EB871F1FCF861C00D1684F /* Day21.mp3 in Resources */,
+				D8EB871E1FCF861C00D1684F /* Day14.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		701BC229F7AE761D0E976899 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Habit Challenge/Pods-Habit Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9496D6255783DEA902DBE4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Habit Challenge/Pods-Habit Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09E19E756ABB88A9D5DD191 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8414C461FBA64850099C123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D881840D1FF5547100E9B101 /* AboutUsVC.swift in Sources */,
+				D8B2D5411FF2B2D5003503BA /* WebViewViewController.swift in Sources */,
+				D88184051FF547EB00E9B101 /* MenuViewController.swift in Sources */,
+				D88184091FF54CFF00E9B101 /* DailyReminderVC.swift in Sources */,
+				D84277721FBD0D300004B2AE /* HabitResult.swift in Sources */,
+				D84277701FBD0C630004B2AE /* Habit.swift in Sources */,
+				D8430E521FC9F4E800340040 /* HabitResultTableViewCell.swift in Sources */,
+				D8414C6C1FBA66F00099C123 /* DAO.swift in Sources */,
+				D8B2D53D1FF2A0F0003503BA /* HomeScreenViewController.swift in Sources */,
+				D88184191FF5553000E9B101 /* ContactUsVC.swift in Sources */,
+				D8D184071FC7236E0008D880 /* Extensions.swift in Sources */,
+				D881841D1FF555A000E9B101 /* ProductsVC.swift in Sources */,
+				D8414C691FBA66300099C123 /* DisplayHabitViewController.swift in Sources */,
+				D8EB87271FCF8B3800D1684F /* AudioHelper.swift in Sources */,
+				D84109341FC744F400134FA2 /* DateTools.swift in Sources */,
+				D88184151FF554E100E9B101 /* SupportOurMissionVC.swift in Sources */,
+				D8CF07DF1FC73A3B00CFD252 /* HabitChallengeDB.swift in Sources */,
+				D8414C651FBA65E10099C123 /* NewHabitViewController.swift in Sources */,
+				D8414C4E1FBA64850099C123 /* AppDelegate.swift in Sources */,
+				D8414C611FBA65620099C123 /* HabitListViewController.swift in Sources */,
+				D88184111FF554A600E9B101 /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8414C561FBA64850099C123 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8414C571FBA64850099C123 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8414C5A1FBA64850099C123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8414C5B1FBA64850099C123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8414C5D1FBA64850099C123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DAFAB811D8699C9F6F1348 /* Pods-Habit Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMWV6CCYQG;
+				INFOPLIST_FILE = "Habit Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chadwiedemann.habitchallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8414C5E1FBA64850099C123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D13056764F018213EAAB5AB /* Pods-Habit Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMWV6CCYQG;
+				INFOPLIST_FILE = "Habit Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chadwiedemann.habitchallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8414C451FBA64850099C123 /* Build configuration list for PBXProject "Habit Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8414C5A1FBA64850099C123 /* Debug */,
+				D8414C5B1FBA64850099C123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8414C5C1FBA64850099C123 /* Build configuration list for PBXNativeTarget "Habit Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8414C5D1FBA64850099C123 /* Debug */,
+				D8414C5E1FBA64850099C123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8414C421FBA64850099C123 /* Project object */;
+}

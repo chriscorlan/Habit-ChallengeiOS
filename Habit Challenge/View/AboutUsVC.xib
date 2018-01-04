@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsVC" customModule="Habit_Challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTA-d1-Op4">
+                    <rect key="frame" x="20" y="45" width="335" height="403"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Mr. Change Agent">
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <mutableString key="content">
+As a Recovery Coach, Minister, Pastoral counselor, teacher and author, Ron Ovitt has been a change agent most of his adult life. He has many different videos, webinars, books and teachings on changing habits and crushing cravings. He is currently President of Empower For Living. Empower For Living exists to bring knowledge, hope and faith to some of life's most difficult challenges.
+
+The Habit Challenge App is a tool that you can have with you 24/7 to help you overcome a bad habit or start a new good one.
+
+</mutableString>
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Habit Challenge App ">
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+Version 1.1  </string>
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Suggestions/comments">
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+Please report problems or suggestions for us to address at www.empowerforliving.com/HabitChallengeContact
+
+</string>
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Rate this App">
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" If this App has been helpful please rate us favorably so others will be encouraged to use this tool.  ">
+                            <attributes>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WTA-d1-Op4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CDe-Ke-Wbf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WTA-d1-Op4" secondAttribute="trailing" constant="20" id="QDj-46-oOg"/>
+                <constraint firstItem="WTA-d1-Op4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="jha-lZ-6cw"/>
+                <constraint firstItem="WTA-d1-Op4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vkA-mP-B4I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
