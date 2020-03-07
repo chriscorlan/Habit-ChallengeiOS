@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CravingsIntensityVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CravingsIntensityVC" customModule="Habit_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="cravingSlider" destination="C8F-gp-8Md" id="PZe-rh-sXD"/>
+                <outlet property="cravingsTableView" destination="qhW-56-b3Y" id="AAe-6w-N6S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +22,87 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Craving Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-MG-S8m">
+                    <rect key="frame" x="118" y="40" width="140" height="25.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKb-g7-srN">
+                    <rect key="frame" x="15" y="70.5" width="345" height="90"/>
+                    <string key="text">It is helpful to know where you are in relationship to your craving. Once you have slipped or relapsed it is too late to check. Although you can start over it would be better to stop your craving before it escalates into behavior.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6V-iV-FBe">
+                    <rect key="frame" x="15" y="165.5" width="345" height="72"/>
+                    <string key="text">Where are you today with your craving 1-5 (1 being not bothered, 5 extremely agitated and ready to give in.) If you are a 3, 4, or 5 go to Craving Assistance Toolbox.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAb-M2-Tzg">
+                    <rect key="frame" x="192.5" y="627" width="172.5" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.25490196079999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteButtonPressed:" destination="-1" eventType="touchUpInside" id="3AI-Gy-sEE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-Js-Ge9">
+                    <rect key="frame" x="10" y="627" width="173" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.25490196079999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add A Craving">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addATriggerButtonPressed:" destination="-1" eventType="touchUpInside" id="RGE-fa-14V"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="C8F-gp-8Md">
+                    <rect key="frame" x="23" y="247.5" width="329" height="31"/>
+                    <color key="minimumTrackTintColor" red="1" green="0.25490196079999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                </slider>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-56-b3Y">
+                    <rect key="frame" x="15" y="282.5" width="345" height="339.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="S1R-G9-OMG"/>
+                        <outlet property="delegate" destination="-1" id="xa6-pp-fCE"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QKb-g7-srN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="0sb-Hb-69h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y6V-iV-FBe" secondAttribute="trailing" constant="15" id="1OM-K5-M5q"/>
+                <constraint firstItem="QKb-g7-srN" firstAttribute="top" secondItem="5P4-MG-S8m" secondAttribute="bottom" constant="5" id="1yb-Lf-CY5"/>
+                <constraint firstItem="C8F-gp-8Md" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="7zu-wj-vA2"/>
+                <constraint firstItem="qhW-56-b3Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AGr-2c-Gus"/>
+                <constraint firstItem="5hZ-Js-Ge9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="AKX-SM-Q1c"/>
+                <constraint firstItem="qhW-56-b3Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="LIt-Ar-d8q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QKb-g7-srN" secondAttribute="trailing" constant="15" id="Psi-zh-rg9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qhW-56-b3Y" secondAttribute="trailing" constant="15" id="VC6-JG-iui"/>
+                <constraint firstItem="y6V-iV-FBe" firstAttribute="top" secondItem="QKb-g7-srN" secondAttribute="bottom" constant="5" id="Y4X-c0-WhT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5hZ-Js-Ge9" secondAttribute="bottom" constant="10" id="cDn-Dd-NC6"/>
+                <constraint firstItem="5P4-MG-S8m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="eOb-Bp-qnP"/>
+                <constraint firstItem="y6V-iV-FBe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="fuc-6y-1pG"/>
+                <constraint firstItem="C8F-gp-8Md" firstAttribute="top" secondItem="y6V-iV-FBe" secondAttribute="bottom" constant="10" id="gD8-bc-XRb"/>
+                <constraint firstItem="sAb-M2-Tzg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.46" id="itK-1w-dyb"/>
+                <constraint firstItem="sAb-M2-Tzg" firstAttribute="top" secondItem="qhW-56-b3Y" secondAttribute="bottom" constant="5" id="jbn-P4-o0c"/>
+                <constraint firstItem="5P4-MG-S8m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kGj-3G-I8a"/>
+                <constraint firstItem="qhW-56-b3Y" firstAttribute="top" secondItem="C8F-gp-8Md" secondAttribute="bottom" constant="5" id="mVb-XN-oPX"/>
+                <constraint firstItem="5hZ-Js-Ge9" firstAttribute="width" secondItem="sAb-M2-Tzg" secondAttribute="width" id="npn-O8-KVT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C8F-gp-8Md" secondAttribute="trailing" constant="25" id="pBg-1F-YoG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sAb-M2-Tzg" secondAttribute="trailing" constant="10" id="wME-W5-Rd9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sAb-M2-Tzg" secondAttribute="bottom" constant="10" id="ygJ-JS-ioK"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
     </objects>
 </document>

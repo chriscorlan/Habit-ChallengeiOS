@@ -35,12 +35,7 @@ class MenuViewController: UIViewController {
         cells.append(cell5)
         cells.append(cell6)
         
-        
-        
-        
     }
-
-
 }
 
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
@@ -84,6 +79,4 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             
         }
     }
-
-    
 }

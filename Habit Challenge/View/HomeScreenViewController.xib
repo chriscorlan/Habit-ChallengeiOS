@@ -25,23 +25,22 @@
                 <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-GI-kVw">
                     <rect key="frame" x="10" y="178.5" width="355" height="133.5"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-6R-9xV">
-                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="133.5"/>
-                            <state key="normal" image="getStartedNow"/>
+                        <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-6R-9xV">
+                            <rect key="frame" x="0.0" y="8" width="91.5" height="118"/>
+                            <state key="normal" image="get_started_now"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="rpd-Hy-ddG"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bG-YA-oU4">
-                            <rect key="frame" x="131.5" y="0.0" width="92" height="133.5"/>
-                            <state key="normal" image="recordTodaysProgress"/>
+                        <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bG-YA-oU4">
+                            <rect key="frame" x="131.5" y="7.5" width="92" height="119"/>
+                            <state key="normal" image="record_todays_progress"/>
                             <connections>
                                 <action selector="recordTodaysProgressButtonPressed:" destination="-1" eventType="touchUpInside" id="HMP-eb-R2a"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGm-Zo-AnL">
-                            <rect key="frame" x="263.5" y="0.0" width="91.5" height="133.5"/>
-                            <state key="normal" image="habitAppHandbook"/>
+                        <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGm-Zo-AnL">
+                            <rect key="frame" x="263.5" y="50" width="91.5" height="34"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="leG-ui-ErQ"/>
                             </connections>
@@ -55,23 +54,23 @@
                 <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MFp-Pf-9iX">
                     <rect key="frame" x="10" y="322" width="355" height="133"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-8j-3Sf">
-                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="133"/>
-                            <state key="normal" image="cravingIntensityMeter"/>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-8j-3Sf">
+                            <rect key="frame" x="0.0" y="7" width="91.5" height="119"/>
+                            <state key="normal" image="craving_intensity_meter"/>
                             <connections>
-                                <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="psY-7F-jYg"/>
+                                <action selector="cravingsIntensityMeterButtonPressed:" destination="-1" eventType="touchUpInside" id="Bcg-eO-cze"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE5-4L-2bZ">
-                            <rect key="frame" x="131.5" y="0.0" width="92" height="133"/>
-                            <state key="normal" image="cravingWarningSigns"/>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE5-4L-2bZ">
+                            <rect key="frame" x="131.5" y="7" width="92" height="119"/>
+                            <state key="normal" image="relapse_warning_signs"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="YGM-d7-Lgs"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oA-aA-H2c">
-                            <rect key="frame" x="263.5" y="0.0" width="91.5" height="133"/>
-                            <state key="normal" image="cravingHelpToolbox"/>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oA-aA-H2c">
+                            <rect key="frame" x="263.5" y="7.5" width="91.5" height="118"/>
+                            <state key="normal" image="craving_assistance_toolbox"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="gqR-fP-Yqj"/>
                             </connections>
@@ -85,25 +84,25 @@
                 <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Tkm-eq-FR8">
                     <rect key="frame" x="10" y="465" width="355" height="133"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaS-VF-YJO">
-                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="133"/>
-                            <state key="normal" image="spiritualHelpToolbox"/>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaS-VF-YJO">
+                            <rect key="frame" x="0.0" y="7" width="91.5" height="119"/>
+                            <state key="normal" image="spiritual_help_toolbox"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="oJ1-0W-EuS"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-fI-Uwb">
-                            <rect key="frame" x="131.5" y="0.0" width="92" height="133"/>
-                            <state key="normal" image="fiveStepsToOvercomeCraving"/>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-fI-Uwb">
+                            <rect key="frame" x="131.5" y="7.5" width="92" height="118"/>
+                            <state key="normal" image="five_steps_to_overcome_craving"/>
                             <connections>
                                 <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="Yc0-R1-Ydx"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzl-j1-jNL">
-                            <rect key="frame" x="263.5" y="0.0" width="91.5" height="133"/>
-                            <state key="normal" image="manageYourTriggers"/>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzl-j1-jNL">
+                            <rect key="frame" x="263.5" y="7.5" width="91.5" height="118"/>
+                            <state key="normal" image="manage_your_trigger_checklist"/>
                             <connections>
-                                <action selector="otherButtonPressed:" destination="-1" eventType="touchUpInside" id="3rb-xm-L94"/>
+                                <action selector="manageYourTriggersButtonPressed:" destination="-1" eventType="touchUpInside" id="LPB-uT-MRK"/>
                             </connections>
                         </button>
                     </subviews>
@@ -112,7 +111,7 @@
                         <constraint firstItem="Rzl-j1-jNL" firstAttribute="width" secondItem="eaS-VF-YJO" secondAttribute="width" id="tSs-4q-9Ks"/>
                     </constraints>
                 </stackView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GooglePlay" translatesAutoresizingMaskIntoConstraints="NO" id="5On-gq-f53">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habit_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5On-gq-f53">
                     <rect key="frame" x="121" y="20" width="133.5" height="133.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="5On-gq-f53" secondAttribute="height" multiplier="1:1" id="DH1-2e-EfI"/>
@@ -142,15 +141,14 @@
         </view>
     </objects>
     <resources>
-        <image name="GooglePlay" width="256" height="256"/>
-        <image name="cravingHelpToolbox" width="121" height="199"/>
-        <image name="cravingIntensityMeter" width="121" height="199"/>
-        <image name="cravingWarningSigns" width="121" height="199"/>
-        <image name="fiveStepsToOvercomeCraving" width="121" height="199"/>
-        <image name="getStartedNow" width="122" height="199"/>
-        <image name="habitAppHandbook" width="122" height="199"/>
-        <image name="manageYourTriggers" width="121" height="199"/>
-        <image name="recordTodaysProgress" width="121" height="199"/>
-        <image name="spiritualHelpToolbox" width="122" height="199"/>
+        <image name="craving_assistance_toolbox" width="118" height="118"/>
+        <image name="craving_intensity_meter" width="120" height="119"/>
+        <image name="five_steps_to_overcome_craving" width="119" height="118"/>
+        <image name="get_started_now" width="118" height="118"/>
+        <image name="habit_app_logo" width="873" height="872"/>
+        <image name="manage_your_trigger_checklist" width="118" height="118"/>
+        <image name="record_todays_progress" width="120" height="119"/>
+        <image name="relapse_warning_signs" width="120" height="119"/>
+        <image name="spiritual_help_toolbox" width="120" height="119"/>
     </resources>
 </document>

@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageYourTriggersVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageYourTriggersVC" customModule="Habit_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="triggersTableView" destination="bDO-1k-ViP" id="lTR-dy-Aag"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +21,79 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triggers Checklist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQs-fQ-UiD">
+                    <rect key="frame" x="98" y="40" width="179.5" height="26"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krt-gG-zhn">
+                    <rect key="frame" x="15" y="71" width="345" height="143.5"/>
+                    <string key="text">Another preventative measure that you can take in trying to overcome a habit or craving is to manage your triggers. Most people manage their triggers after the fact. Then they stop and think, “Where did I go wrong?” and scurry to pick up the pieces. If we stop to think about it you will no doubt be able to point to several triggers that you have difficulty with.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMD-lE-DA9">
+                    <rect key="frame" x="15" y="219.5" width="345" height="72"/>
+                    <string key="text">Where are you today with your craving 1-5 (1 being not bothered, 5 extremely agitated and ready to give in.) If you are a 3, 4, or 5 go to Craving Assistance Toolbox.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDO-1k-ViP">
+                    <rect key="frame" x="5" y="296.5" width="365" height="325.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gag-81-CtR"/>
+                        <outlet property="delegate" destination="-1" id="IGM-Av-BgB"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7r-VJ-dbm">
+                    <rect key="frame" x="192.5" y="627" width="172.5" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.25490196079999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteButtonPressed:" destination="-1" eventType="touchUpInside" id="ojO-I1-e5q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-pd-jTA">
+                    <rect key="frame" x="10" y="627" width="172.5" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.25490196079999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add A Trigger">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addATriggerButtonPressed:" destination="-1" eventType="touchUpInside" id="mRy-a3-Oz8"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZMD-lE-DA9" secondAttribute="trailing" constant="15" id="14a-T6-jhU"/>
+                <constraint firstItem="jQs-fQ-UiD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2mt-76-psn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDO-1k-ViP" secondAttribute="trailing" constant="5" id="7IE-2G-QUR"/>
+                <constraint firstItem="krt-gG-zhn" firstAttribute="top" secondItem="jQs-fQ-UiD" secondAttribute="bottom" constant="5" id="CXR-HO-udh"/>
+                <constraint firstItem="N7r-VJ-dbm" firstAttribute="top" secondItem="bDO-1k-ViP" secondAttribute="bottom" constant="5" id="K9w-Da-jHJ"/>
+                <constraint firstItem="ZMD-lE-DA9" firstAttribute="top" secondItem="krt-gG-zhn" secondAttribute="bottom" constant="5" id="NxQ-t8-a8h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="krt-gG-zhn" secondAttribute="trailing" constant="15" id="OgY-vQ-0bN"/>
+                <constraint firstItem="bDO-1k-ViP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="QUo-pP-IX9"/>
+                <constraint firstItem="krt-gG-zhn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="RfB-Mo-GaQ"/>
+                <constraint firstItem="dXd-pd-jTA" firstAttribute="width" secondItem="N7r-VJ-dbm" secondAttribute="width" id="UcP-sY-aw2"/>
+                <constraint firstItem="bDO-1k-ViP" firstAttribute="top" secondItem="ZMD-lE-DA9" secondAttribute="bottom" constant="5" id="YwP-mf-VDU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N7r-VJ-dbm" secondAttribute="trailing" constant="10" id="dgA-v4-zhM"/>
+                <constraint firstItem="dXd-pd-jTA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="fyv-01-zG2"/>
+                <constraint firstItem="ZMD-lE-DA9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ger-HZ-xor"/>
+                <constraint firstItem="N7r-VJ-dbm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.46" id="kXd-uj-gUE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dXd-pd-jTA" secondAttribute="bottom" constant="10" id="pBQ-Jd-FUj"/>
+                <constraint firstItem="jQs-fQ-UiD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="qUE-Sa-2LD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N7r-VJ-dbm" secondAttribute="bottom" constant="10" id="xgl-rM-FbO"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="65.5"/>
         </view>
     </objects>
 </document>

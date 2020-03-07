@@ -29,11 +29,13 @@ class DisplayHabitViewController: UIViewController {
     }
 
     @IBAction func deleteHabitButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-        if HabitChallengeDB.instance.deleteHabit(hid: self.currentHabit.id){
-            print(self.currentHabit.habitName + " deleted!")
+        
+        Alert.show(title: "Delete Habit", message: "Are you sure you want to delete this Habit? All of your progress will be lost.", on: self) {
+                self.navigationController?.popViewController(animated: true)
+                if HabitChallengeDB.instance.deleteHabit(hid: self.currentHabit.id){
+                print(self.currentHabit.habitName + " deleted!")
+            }
         }
-    
     }
     
 
@@ -50,10 +52,7 @@ extension DisplayHabitViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: HabitResultTableViewCell = self.habitResultsTableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! HabitResultTableViewCell
-        if cell == nil{
-            cell = HabitResultTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: "resultCell")
-        }
+        let cell: HabitResultTableViewCell = self.habitResultsTableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! HabitResultTableViewCell
         cell.fileName = "Day" + String(indexPath.row + 1)
         cell.audioType = "mp3"
         if toastDictionary[indexPath.row + 1] != nil{

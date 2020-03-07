@@ -10,6 +10,8 @@ import UIKit
 
 class CravingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cravingLevelLabel: UILabel!
+    @IBOutlet weak var cravingNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

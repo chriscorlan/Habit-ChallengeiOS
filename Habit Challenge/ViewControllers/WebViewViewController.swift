@@ -23,7 +23,7 @@ class WebViewViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string: "https://www.empowerministry.org/")
+        let myURL = URL(string: webURL)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }

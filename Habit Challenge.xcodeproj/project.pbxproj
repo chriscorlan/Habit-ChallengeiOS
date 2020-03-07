@@ -39,11 +39,20 @@
 		D881841D1FF555A000E9B101 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881841B1FF555A000E9B101 /* ProductsVC.swift */; };
 		D881841E1FF555A000E9B101 /* ProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D881841C1FF555A000E9B101 /* ProductsVC.xib */; };
 		D892E7841FF4083400625AB0 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D892E7831FF4083400625AB0 /* HomeScreenViewController.xib */; };
+		D8A1F53B209E335A00D45EEA /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A1F53A209E335A00D45EEA /* Trigger.swift */; };
 		D8B2D53D1FF2A0F0003503BA /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */; };
 		D8B2D5411FF2B2D5003503BA /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2D53F1FF2B2D5003503BA /* WebViewViewController.swift */; };
 		D8B2D5421FF2B2D5003503BA /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B2D5401FF2B2D5003503BA /* WebViewViewController.xib */; };
 		D8CF07DF1FC73A3B00CFD252 /* HabitChallengeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF07DE1FC73A3B00CFD252 /* HabitChallengeDB.swift */; };
 		D8D184071FC7236E0008D880 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D184061FC7236E0008D880 /* Extensions.swift */; };
+		D8DBB0CC2094EFBC0098E106 /* CravingsIntensityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBB0CA2094EFBC0098E106 /* CravingsIntensityVC.swift */; };
+		D8DBB0CD2094EFBC0098E106 /* CravingsIntensityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DBB0CB2094EFBC0098E106 /* CravingsIntensityVC.xib */; };
+		D8DBB0D02094F1680098E106 /* ManageYourTriggersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBB0CE2094F1680098E106 /* ManageYourTriggersVC.swift */; };
+		D8DBB0D12094F1680098E106 /* ManageYourTriggersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DBB0CF2094F1680098E106 /* ManageYourTriggersVC.xib */; };
+		D8DBB0D42094F8430098E106 /* CravingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBB0D22094F8430098E106 /* CravingTableViewCell.swift */; };
+		D8DBB0D52094F8430098E106 /* CravingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DBB0D32094F8430098E106 /* CravingTableViewCell.xib */; };
+		D8DBB0D72094F9330098E106 /* Craving.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBB0D62094F9330098E106 /* Craving.swift */; };
+		D8DE5360203AF6F400A81341 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE535F203AF6F400A81341 /* Alert.swift */; };
 		D8EB870C1FCCF63B00D1684F /* clapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870B1FCCF63A00D1684F /* clapping.wav */; };
 		D8EB871A1FCF861C00D1684F /* Day1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870E1FCF861B00D1684F /* Day1.mp3 */; };
 		D8EB871B1FCF861C00D1684F /* Day60.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8EB870F1FCF861B00D1684F /* Day60.mp3 */; };
@@ -97,11 +106,20 @@
 		D881841B1FF555A000E9B101 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		D881841C1FF555A000E9B101 /* ProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsVC.xib; sourceTree = "<group>"; };
 		D892E7831FF4083400625AB0 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		D8A1F53A209E335A00D45EEA /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		D8B2D53F1FF2B2D5003503BA /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		D8B2D5401FF2B2D5003503BA /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		D8CF07DE1FC73A3B00CFD252 /* HabitChallengeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitChallengeDB.swift; sourceTree = "<group>"; };
 		D8D184061FC7236E0008D880 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D8DBB0CA2094EFBC0098E106 /* CravingsIntensityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravingsIntensityVC.swift; sourceTree = "<group>"; };
+		D8DBB0CB2094EFBC0098E106 /* CravingsIntensityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CravingsIntensityVC.xib; sourceTree = "<group>"; };
+		D8DBB0CE2094F1680098E106 /* ManageYourTriggersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageYourTriggersVC.swift; sourceTree = "<group>"; };
+		D8DBB0CF2094F1680098E106 /* ManageYourTriggersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageYourTriggersVC.xib; sourceTree = "<group>"; };
+		D8DBB0D22094F8430098E106 /* CravingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravingTableViewCell.swift; sourceTree = "<group>"; };
+		D8DBB0D32094F8430098E106 /* CravingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CravingTableViewCell.xib; sourceTree = "<group>"; };
+		D8DBB0D62094F9330098E106 /* Craving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craving.swift; sourceTree = "<group>"; };
+		D8DE535F203AF6F400A81341 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D8EB870B1FCCF63A00D1684F /* clapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clapping.wav; sourceTree = "<group>"; };
 		D8EB870E1FCF861B00D1684F /* Day1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day1.mp3; sourceTree = "<group>"; };
 		D8EB870F1FCF861B00D1684F /* Day60.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Day60.mp3; sourceTree = "<group>"; };
@@ -182,6 +200,8 @@
 				D8414C6B1FBA66F00099C123 /* DAO.swift */,
 				D842776F1FBD0C630004B2AE /* Habit.swift */,
 				D84277711FBD0D300004B2AE /* HabitResult.swift */,
+				D8DBB0D62094F9330098E106 /* Craving.swift */,
+				D8A1F53A209E335A00D45EEA /* Trigger.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +209,8 @@
 		D8414C6E1FBA67180099C123 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D8DBB0CF2094F1680098E106 /* ManageYourTriggersVC.xib */,
+				D8DBB0CB2094EFBC0098E106 /* CravingsIntensityVC.xib */,
 				D88184181FF5553000E9B101 /* ContactUsVC.xib */,
 				D88184141FF554E100E9B101 /* SupportOurMissionVC.xib */,
 				D88184101FF554A600E9B101 /* SettingsVC.xib */,
@@ -209,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				D8B2D53B1FF2A0F0003503BA /* HomeScreenViewController.swift */,
+				D8DBB0CE2094F1680098E106 /* ManageYourTriggersVC.swift */,
+				D8DBB0CA2094EFBC0098E106 /* CravingsIntensityVC.swift */,
 				D88184031FF547EB00E9B101 /* MenuViewController.swift */,
 				D881840B1FF5547100E9B101 /* AboutUsVC.swift */,
 				D8414C5F1FBA65620099C123 /* HabitListViewController.swift */,
@@ -227,6 +251,8 @@
 		D8430E4F1FC9F4BC00340040 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				D8DBB0D22094F8430098E106 /* CravingTableViewCell.swift */,
+				D8DBB0D32094F8430098E106 /* CravingTableViewCell.xib */,
 				D8430E501FC9F4E800340040 /* HabitResultTableViewCell.swift */,
 				D8430E511FC9F4E800340040 /* HabitResultTableViewCell.xib */,
 			);
@@ -247,6 +273,7 @@
 				D8D184061FC7236E0008D880 /* Extensions.swift */,
 				D84109331FC744F400134FA2 /* DateTools.swift */,
 				D8EB87261FCF8B3800D1684F /* AudioHelper.swift */,
+				D8DE535F203AF6F400A81341 /* Alert.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -366,10 +393,13 @@
 				D881840E1FF5547100E9B101 /* AboutUsVC.xib in Resources */,
 				D88184121FF554A600E9B101 /* SettingsVC.xib in Resources */,
 				D8EB870C1FCCF63B00D1684F /* clapping.wav in Resources */,
+				D8DBB0CD2094EFBC0098E106 /* CravingsIntensityVC.xib in Resources */,
 				D8EB87251FCF861C00D1684F /* Day3.mp3 in Resources */,
 				D8EB87231FCF861C00D1684F /* Day10.mp3 in Resources */,
 				D8EB871F1FCF861C00D1684F /* Day21.mp3 in Resources */,
+				D8DBB0D52094F8430098E106 /* CravingTableViewCell.xib in Resources */,
 				D8EB871E1FCF861C00D1684F /* Day14.mp3 in Resources */,
+				D8DBB0D12094F1680098E106 /* ManageYourTriggersVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +462,14 @@
 				D8B2D5411FF2B2D5003503BA /* WebViewViewController.swift in Sources */,
 				D88184051FF547EB00E9B101 /* MenuViewController.swift in Sources */,
 				D88184091FF54CFF00E9B101 /* DailyReminderVC.swift in Sources */,
+				D8DBB0CC2094EFBC0098E106 /* CravingsIntensityVC.swift in Sources */,
+				D8DBB0D02094F1680098E106 /* ManageYourTriggersVC.swift in Sources */,
 				D84277721FBD0D300004B2AE /* HabitResult.swift in Sources */,
 				D84277701FBD0C630004B2AE /* Habit.swift in Sources */,
+				D8DBB0D72094F9330098E106 /* Craving.swift in Sources */,
 				D8430E521FC9F4E800340040 /* HabitResultTableViewCell.swift in Sources */,
 				D8414C6C1FBA66F00099C123 /* DAO.swift in Sources */,
+				D8DE5360203AF6F400A81341 /* Alert.swift in Sources */,
 				D8B2D53D1FF2A0F0003503BA /* HomeScreenViewController.swift in Sources */,
 				D88184191FF5553000E9B101 /* ContactUsVC.swift in Sources */,
 				D8D184071FC7236E0008D880 /* Extensions.swift in Sources */,
@@ -446,9 +480,11 @@
 				D88184151FF554E100E9B101 /* SupportOurMissionVC.swift in Sources */,
 				D8CF07DF1FC73A3B00CFD252 /* HabitChallengeDB.swift in Sources */,
 				D8414C651FBA65E10099C123 /* NewHabitViewController.swift in Sources */,
+				D8A1F53B209E335A00D45EEA /* Trigger.swift in Sources */,
 				D8414C4E1FBA64850099C123 /* AppDelegate.swift in Sources */,
 				D8414C611FBA65620099C123 /* HabitListViewController.swift in Sources */,
 				D88184111FF554A600E9B101 /* SettingsVC.swift in Sources */,
+				D8DBB0D42094F8430098E106 /* CravingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
