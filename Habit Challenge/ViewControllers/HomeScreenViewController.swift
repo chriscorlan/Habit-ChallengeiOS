@@ -62,7 +62,7 @@ class HomeScreenViewController: UIViewController {
         var myUrl = ""
         switch sender.tag {
         case 1:
-            myUrl = "http://www.empowerministry.org/app/get-started-now/"
+            myUrl = "http://www.empowerministry.org/"
         case 3:
             myUrl = "http://www.empowerministry.org/app/handbook/"
         case 4:
